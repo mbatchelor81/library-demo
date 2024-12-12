@@ -19,7 +19,11 @@ class Book {
     private Author author;
 
     Book(String isbn, String author, String title) {
-        this(new ISBN(isbn), new Title(title), new Author(author));
+        this(
+            new ISBN(isbn), 
+            new Title(title), 
+            new Author(author)
+        );
     }
 }
 
