@@ -1,7 +1,11 @@
+---
+description: How to perform a Maven Build and Test
+---
+
 # Library Management System - Build & Test Workflow
 
 ## Overview
-This workflow provides a standardized, repeatable process for building, testing, and optionally running the UI for the Library Management System. This DDD (Domain-Driven Design) example uses Spring Boot, Spock/Groovy testing, and H2 database.
+This workflow provides a standardized, repeatable process for building, testing, and optionally running the UI for the Library Management System. This DDD (Domain-Driven Design) uses Spring Boot, Spock/Groovy testing, and H2 database.
 
 ## Prerequisites
 - Java 11 or higher

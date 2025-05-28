@@ -1,6 +1,7 @@
 ---
 trigger: glob
-description: Apply this ruleset only when working on the database logic. 
+description: Apply this ruleset only when working on the database logic.
+globs: src/*
 ---
 
 Java Coding Guidelines
