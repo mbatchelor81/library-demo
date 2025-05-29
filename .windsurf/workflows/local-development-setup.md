@@ -1,6 +1,5 @@
 ---
 description: Local Development Setup - Configure environment, dependencies, and debug tools
-category: before-coding
 ---
 
 # Local Development Setup Workflow
@@ -9,7 +8,7 @@ category: before-coding
 **What it does**: Sets up local development environment with all dependencies, debug tools, and optimal configuration for the library management system.
 
 **Time**: ~10-15 minutes
-**Prerequisites**: Java 11+, Maven 3.6+, IDE
+**Prerequisites**: Java 11+, Maven 3.6+, IDE, jq (JSON processor, install via 'brew install jq')
 
 ## Workflow Steps
 
@@ -117,44 +116,11 @@ kill $APP_PID
 # Update vulnerability database (first time)
 mvn org.owasp:dependency-check-maven:update-only
 
-# Verify security scanning works
-mvn org.owasp:dependency-check-maven:check
-
 # Test coverage report generation
 mvn test jacoco:report
 ```
 
-### Step 7: IDE Configuration (Optional)
-```bash
-# For VS Code users
-mkdir -p .vscode
-cat > .vscode/settings.json << 'EOF'
-{
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.saveActions.organizeImports": true,
-    "files.exclude": {
-        "**/target": true
-    }
-}
-EOF
-
-cat > .vscode/launch.json << 'EOF'
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Debug Library App",
-            "request": "launch",
-            "mainClass": "io.pillopl.library.LibraryApplication",
-            "args": "--spring.profiles.active=dev"
-        }
-    ]
-}
-EOF
-```
-
-### Step 8: Verify Complete Setup
+### Step 7: Verify Complete Setup
 ```bash
 # Final verification
 echo "=== Development Environment Ready ==="
