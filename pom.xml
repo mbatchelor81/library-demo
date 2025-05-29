@@ -145,6 +145,13 @@
                         <exclude>**/ui/**</exclude>
                         <exclude>**/new_model/**</exclude>
                     </excludes>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.4</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>
