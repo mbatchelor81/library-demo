@@ -1,5 +1,5 @@
 ---
-trigger: glob
+trigger: manual
 description: Apply this ruleset only when working on the database logic.
 globs: src/*
 ---

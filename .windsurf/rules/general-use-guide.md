@@ -1,5 +1,5 @@
 ---
-trigger: always_on
+trigger: manual
 ---
 
 - Do not give me code unless I explicitly ask for it.

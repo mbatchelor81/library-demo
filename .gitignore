@@ -24,3 +24,7 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# IGNORE TEST
+/docs/
+.DS_STORE

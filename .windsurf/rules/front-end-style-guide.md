@@ -1,5 +1,5 @@
 ---
-trigger: model_decision
+trigger: manual
 description: Use these rules when working on the website.
 ---
 
